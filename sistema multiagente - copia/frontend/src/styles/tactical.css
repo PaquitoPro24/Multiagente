@@ -1,0 +1,65 @@
+.tactical-screen {
+  min-height: 100vh;
+  padding: 20px;
+  background: radial-gradient(circle at top, #112019 0, #050806 60%);
+  color: #7CFF9A;
+}
+
+.tactical-title {
+  font-size: 32px;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+}
+
+.tactical-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.tactical-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.left-panel,
+.center-panel,
+.right-panel {
+  border: 2px solid #1B2A24;
+  background: rgba(5, 10, 8, 0.9);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.control-bar {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.control-bar button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #1B2A24;
+  background: #122019;
+  color: #7CFF9A;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.control-bar button:hover {
+  background: #183426;
+  box-shadow: 0 0 10px rgba(124, 255, 154, 0.3);
+}

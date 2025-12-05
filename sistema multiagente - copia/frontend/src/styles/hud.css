@@ -1,0 +1,18 @@
+.hud {
+  border: 1px solid #1B2A24;
+  padding: 10px;
+  border-radius: 8px;
+  background: #050b08;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+.hud h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.hud p {
+  font-size: 13px;
+  margin-bottom: 3px;
+}

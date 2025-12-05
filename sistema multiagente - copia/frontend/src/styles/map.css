@@ -1,0 +1,44 @@
+.map-container {
+  padding: 10px;
+  border: 1px solid #1B2A24;
+  background: #060b09;
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 26px;
+  height: 26px;
+  margin: 2px;
+  border-radius: 4px;
+  background: #101613;
+  border: 1px solid #1B2A24;
+  transition: 0.12s;
+}
+
+/* Obstáculos */
+.cell.obstacle {
+  background: #3A3F3C;
+}
+
+/* Víctimas */
+.cell.victim {
+  background: #FF9933;
+  box-shadow: 0 0 12px #FF9933;
+}
+
+/* Base */
+.cell.base {
+  background: #2898FF;
+  box-shadow: 0 0 12px #2898FF;
+}
+
+/* Drone */
+.cell.drone {
+  background: #48FF7A;
+  box-shadow: 0 0 14px #48FF7A;
+  transform: scale(1.15);
+}

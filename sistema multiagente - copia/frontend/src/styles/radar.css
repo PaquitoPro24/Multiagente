@@ -1,0 +1,37 @@
+.radar {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #1B2A24;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 10px auto;
+  background: radial-gradient(circle, #07130b 0, #020403 80%);
+  box-shadow: 0 0 18px rgba(0, 255, 100, 0.3);
+}
+
+.radar-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(124, 255, 154, 0.2) 1px, transparent 1px),
+    linear-gradient(rgba(124, 255, 154, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 255, 154, 0.09) 1px, transparent 1px);
+  background-size: 60px 60px, 20px 20px, 20px 20px;
+  mix-blend-mode: screen;
+}
+
+.radar-sweep {
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    rgba(0,255,100,0.5),
+    rgba(0,255,100,0.0)
+  );
+  transform-origin: center;
+  animation: sweep 2.4s linear infinite;
+}
+
+@keyframes sweep {
+  100% { transform: rotate(360deg); }
+}
